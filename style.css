@@ -11,6 +11,7 @@ body {
 
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 35px;
     background-color: rgb(102, 101, 101);
@@ -89,6 +90,7 @@ margin-top: 10px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow: hidden;
+    color: white;
 }
 
 #abili {
@@ -99,9 +101,13 @@ margin-top: 10px;
     width: 50px;
     height: 50px;
     margin: 10px;
+    user-select: none;
    
 }
 
+img {
+    user-select: none;
+}
 
 
 
@@ -153,5 +159,76 @@ margin-top: 10px;
         transform: translateX(0);
     }
     
+}
+
+#contact-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+form {
+    background-color: rgb(224, 220, 220);
+    /* background-color: rgb(48, 48, 48); */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+form * {
+   
+    margin: 10px;
+    display: block;
+    padding: 5px;
+    
+}
+
+#square {
+    height: 200px;
+    width: 200px;
+    border: 25px solid red;
+    border-radius: 50%;
+    animation: circle 3s infinite forwards;
+}
+
+#square2 {
+    height: 200px;
+    width: 200px;
+    border: 25px solid red;
+}
+
+
+@keyframes circle {
+    0% {border-color: red; transform: scale(1);}
+    25% {border-color: blue; transform: scale(1.2);}
+    50% {border-color: green; transform: scale(0.6);}
+    75% {border-color: orange; transform: scale(0.8);}
+    100% {border-color: red; transform: scale(1);}
+}
+
+
+
+.github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    user-select: none;
+    
+}
+
+
+
+.github h3 a {
+    text-decoration: none;
+    color: rgb(155, 175, 241);
+    
+}
+
+
+.github h3 img {
+    width: 100px;
 }
 
