@@ -67,6 +67,22 @@ body {
     
 }
 
+@media screen and (max-width: 768px) {
+    .info-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .info-img img {
+        width: 100%;
+    }
+
+    .info-text {
+        text-align: center;
+    }
+}
 
 .contact {
     display: flex;
@@ -101,4 +117,29 @@ body {
 
 .education-item {
     padding: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .education-flex {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .education img {
+        width: 100%;
+    }
+}
+
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    height: 100vh;
+    text-align: center;
 }
